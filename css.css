@@ -1,0 +1,23 @@
+.main{
+ height: auto;
+}
+.screen{
+    height: 150px;
+    background-color: white;
+}
+.keyboard{
+    height: 350px;
+  
+}
+
+.item{
+    height: 60px;
+}
+.input{
+    font-size: 30px;
+    border: 0px white;
+    outline: none;
+}
+.output{
+    font-size: 50px;
+}
