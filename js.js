@@ -11,16 +11,16 @@ btn.onclick= function(e){
 }
 let input_text =""
 
-let output_text=0
+let output_text=0;
 
 
 var arrayLength = btn.length
-for (let i = 0; i < arrayLength; i++) {
-    btn[i].onclick = function(e){
-        if (e.target.value == 'undefined') {
-            e.target.value = ''
-        }
-         input_text= input_text + e.target.value
+for (item of btn) {
+    item.addEventListener('click', (e) => {
+   
+        buttonText = e.target.innerText;
+        console.log(buttonText);
+         input_text= input_text + e.target.innerText;
         switch (e.target.value) {
             case 'del':
                 input_text = input_text.substring(0,input_text.length -4)  
@@ -43,15 +43,10 @@ for (let i = 0; i < arrayLength; i++) {
     
          
     inputElement.setAttribute('value',input_text)    
-       
-
-               
-    //outputElement.textContent = output_text.toFixed(3)   
-       
     
-   } 
-} 
+   
+} )
 
 
 
-
+}
